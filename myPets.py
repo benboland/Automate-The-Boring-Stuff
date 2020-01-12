@@ -1,9 +1,6 @@
 myPets = ['Zophie', 'Pooka', 'Fat-tail']
-name =  
-def  petCheck(name):
-while name != 'quit':
-    name = input('Enter a pet name: ')
-    if name not in myPets:
-        print('I do not have a pet named ' + name)
-    else:
-        print(name + ' is my pet.')
+name = input('Enter a pet name: ')
+if name.capitalize() not in myPets:
+    print('I do not have a pet named ' + name.capitalize())
+else:
+    print(name.capitalize() + ' is my pet.')
