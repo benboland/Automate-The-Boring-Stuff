@@ -6,7 +6,7 @@ def totalBrought(guests, item):
         numBrought = numBrought + v.get(item, 0)
     return numBrought
 
-print('Number of things being brough:')
+print('Number of things being brought:')
 print(' - Apples            ' + str(totalBrought(allGuests, 'apples')))
 print(' - Cups              ' + str(totalBrought(allGuests, 'cups')))
 print(' - Cakes             ' + str(totalBrought(allGuests, 'cakes')))
