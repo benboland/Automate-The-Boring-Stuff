@@ -33,7 +33,7 @@ def downloadXkcd(startComic, endComic):
 
 # create and start the thread objects
 downloadThreads = []        # a list of all the thread objects
-for i in range(0, 1400, 100):   # loops 14 times, creates 14 threads
+for i in range(0, 3400, 100):   # loops 14 times, creates 14 threads
     downloadThread = threading.Thread(target=downloadXkcd, args=(i, i + 99))
     downloadThreads.append(downloadThread)
     downloadThread.start()
